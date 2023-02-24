@@ -2,7 +2,7 @@
 <img src="https://mooditude.app/wp-content/uploads/2022/01/aimless-scrolling.jpeg" alt="Alt text" title="Optional title" height="500" width="900">
 
 # Infinite Scrolling Contact List
-This is a web application built using React that displays an infinite scrolling list of contacts. The contacts are loaded dynamically from an external API as the user scrolls down the list.
+The Infinite Scrolling Contact List App is a React-based web application that allows users to view a list of contacts sourced from a free random user API. The app requires users to authenticate before accessing the main list of contacts, and it uses infinite scrolling to load more contacts as the user scrolls to the end of the list.
 
 ## Table of Contents
 
