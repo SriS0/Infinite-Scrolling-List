@@ -11,6 +11,7 @@ The Infinite Scrolling Contact List App is a React-based web application that al
   - [Installation](#installation)
   - [Features](#features)
   - [Functionality](#functionality)
+  - [Usage](#usage)
   - [Contributing](#contributing)
   - [Dependencies](#dependencies)
   - [Documentation](#documentation)
@@ -30,21 +31,37 @@ To get started with the Project, you'll need to have Node.js installed on your m
 ```
 ## Features
 
-The following features are available in the API:
+The following features are available in the Contact List App:
 
-- Infinite scrolling: contacts are loaded as the user scrolls down the list
-- Responsive design: the application is optimized for desktop and mobile devices
+- Authentication: The app requires users to authenticate with a fake username and password before accessing the main list of contacts.
+- Skeleton Loader: The app uses a skeleton loader during loading, providing a visually pleasing and informative loading experience for the user.
+- React-based UI: The app is built using React, which allows for a dynamic and interactive user interface.
+- Infinite Scrolling: The app uses infinite scrolling to load more contacts as the user scrolls to the end of the list.
+- Responsive Design: The app is designed to look correct on a 320x480-sized viewport, ensuring that it works well on mobile devices.
+- Static List of Users: The app sources its list of contacts from a free random user API, ensuring that the list is always up-to-date and accurate.
+- Partial Loading: The app initially loads a partial list of contacts, making it quicker to load and reducing the amount of data transferred.
+- Loading Feedback: The app provides loading feedback to the user when more contacts are being loaded, ensuring that the user knows what's happening and doesn't think the app is frozen.
 
 ## Functionality
-The Contact List App has the following requirements:
-``` bash
-1. The app requires users to log in with fake credentials (username: foo, password: bar) before accessing the main list of contacts.
-2. The app checks the username and password entered by the user, and if they match the expected values, the user is granted access to the main list of contacts.
-3. After successful login, users will be redirected to the '/home' route where the main list of contacts will be displayed. 
-4. The list of contacts displays user profiles, each with their photo and other relevant details, such as their name, email address, phone number, and location.
-5. The list of contacts is sourced from a free random user API. 
-6. The app uses the API to load a partial list of contacts initially, and as the user scrolls to the end of the list, it will show loading feedback and load more contacts after a delay of 1 second. The app implements infinite scrolling to provide a smooth user experience.
-7. The app will display a logout button on all logged in pages. Clicking on this button will log the user out of their account and redirect them to the login page.
+The Contact List App provides the following functionality:
+
+- The app requires users to log in with fake credentials (username: foo, password: bar) before accessing the main list of contacts.
+- The app checks the username and password entered by the user, and if they match the expected values, the user is granted access to the main list of contacts.
+- After successful login, users will be redirected to the '/home' route where the main list of contacts will be displayed. 
+- The list of contacts displays user profiles, each with their photo and other relevant details, such as their name, email address, phone number, and location.
+- The list of contacts is sourced from a free random user API. 
+- The app uses the API to load a partial list of contacts initially, and as the user scrolls to the end of the list, it will show loading feedback and load more contacts after a delay of 1 second. The app implements infinite scrolling to provide a smooth user experience.
+- The app will display a logout button on all logged in pages. Clicking on this button will log the user out of their account and redirect them to the login page.
+
+## Usage
+
+To use the Contact List App, follow these steps:
+```bash
+1. Open the app in your web browser.
+2. Enter the fake login credentials (username: foo, password: bar) to access the main list of contacts.
+3. The main list of contacts will be displayed, with a partial list of user profiles initially loaded. 
+4. As you scroll to the end of the list, the app will show loading feedback and load more contacts after a delay of 1 second.
+5. To log out of your account, click on the logout button, which will log you out of your account and redirect you to the login page.
 ```
 ## Contributing
 
@@ -58,7 +75,7 @@ Contributions are welcome! To contribute to the project, follow these steps:
 **Note**: Please ensure that your code adheres to the existing style and passes the unit tests before submitting a pull request.
 
 ## Dependencies
-The following dependencies are required to run the Infinite-Scrolling-List:
+The following dependencies are required to run the Contact List App:
 
 ```bash
     "bootstrap": "^5.2.3",
@@ -71,6 +88,7 @@ The following dependencies are required to run the Infinite-Scrolling-List:
 ```
 
 ## Documentation
+
 This are the Documentation for all dependencies for your references:
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [React-bootstrap](https://react-bootstrap.github.io/)
@@ -80,6 +98,7 @@ This are the Documentation for all dependencies for your references:
 - [React-router-dom](https://reactrouter.com/docs)
 
 ## Tech Stack
+
 The application was built using the following technologies:
 ```bash
 1. React: A JavaScript library for building user interfaces. React is used to create reusable UI components that can be combined to create complex web applications.
