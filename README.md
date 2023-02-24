@@ -10,9 +10,10 @@ This is a web application built using React that displays an infinite scrolling 
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Features](#features)
+  - [Functionality](#functionality)
   - [Contributing](#contributing)
-  - [Documentation](#documentation)
   - [Dependencies](#dependencies)
+  - [Documentation](#documentation)
   - [Tech Stack](#tech-stack)
   - [API Reference](#api-reference)
   - [License](#license)
@@ -21,11 +22,11 @@ This is a web application built using React that displays an infinite scrolling 
 ## Installation
 To get started with the Project, you'll need to have Node.js installed on your machine. Once you have those installed, follow these steps:
 ```bash
-Clone the repository to your local machine: git clone https://github.com/your-username/infinite-scrolling-contact-list.git
-Navigate to the project directory: cd infinite-scrolling-contact-list
-Install the required dependencies: npm install
-Start the development server: npm start
-Open a web browser and go to http://localhost:3000 to view the application.rt
+1. Clone the repository to your local machine: git clone https://github.com/your-username/infinite-scrolling-contact-list.git
+2. Navigate to the project directory: cd infinite-scrolling-contact-list
+3. Install the required dependencies: npm install
+4. Start the development server: npm start
+5. Open a web browser and go to http://localhost:3000 to view the application.rt
 ```
 ## Features
 
@@ -34,6 +35,17 @@ The following features are available in the API:
 - Infinite scrolling: contacts are loaded as the user scrolls down the list
 - Responsive design: the application is optimized for desktop and mobile devices
 
+## Functionality
+The Contact List App has the following requirements:
+``` bash
+1. The app requires users to log in with fake credentials (username: foo, password: bar) before accessing the main list of contacts.
+2. The app checks the username and password entered by the user, and if they match the expected values, the user is granted access to the main list of contacts.
+3. After successful login, users will be redirected to the '/home' route where the main list of contacts will be displayed. 
+4. The list of contacts displays user profiles, each with their photo and other relevant details, such as their name, email address, phone number, and location.
+5. The list of contacts is sourced from a free random user API. 
+6. The app uses the API to load a partial list of contacts initially, and as the user scrolls to the end of the list, it will show loading feedback and load more contacts after a delay of 1 second. The app implements infinite scrolling to provide a smooth user experience.
+7. The app will display a logout button on all logged in pages. Clicking on this button will log the user out of their account and redirect them to the login page.
+```
 ## Contributing
 
 Contributions are welcome! To contribute to the project, follow these steps:
@@ -44,18 +56,9 @@ Contributions are welcome! To contribute to the project, follow these steps:
 4. Wait for a code review and approval before merging.
 ```
 **Note**: Please ensure that your code adheres to the existing style and passes the unit tests before submitting a pull request.
-## Documentation
-
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [React-bootstrap](https://react-bootstrap.github.io/)
-- [React-dom](https://reactjs.org/docs/react-dom.html)
-- [React-icons](https://react-icons.github.io/react-icons/)
-- [React-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
-- [React-router-dom](https://reactrouter.com/docs)
 
 ## Dependencies
-
-The following dependencies are required to run the Get YouTube Subscribers :
+The following dependencies are required to run the Infinite-Scrolling-List:
 
 ```bash
     "bootstrap": "^5.2.3",
@@ -67,8 +70,16 @@ The following dependencies are required to run the Get YouTube Subscribers :
     "react-router-dom": "^6.0.2",
 ```
 
-## Tech Stack
+## Documentation
+This are the Documentation for all dependencies for your references:
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [React-bootstrap](https://react-bootstrap.github.io/)
+- [React-dom](https://reactjs.org/docs/react-dom.html)
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [React-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
+- [React-router-dom](https://reactrouter.com/docs)
 
+## Tech Stack
 The application was built using the following technologies:
 ```bash
 1. React: A JavaScript library for building user interfaces. React is used to create reusable UI components that can be combined to create complex web applications.
@@ -81,16 +92,20 @@ The application was built using the following technologies:
 
 5. React Loading Skeleton: A library for displaying loading indicators in React applications. React Loading Skeleton is used to display a loading indicator while the contact list is being fetched from the API.
 ```
-## API Reference
 
+## API Reference
 The application uses the Random User API to fetch contact data. This API generates random user data, including names, email addresses, and profile pictures. The application makes API requests to this service as the user scrolls down the contact list, allowing it to display an unlimited number of contacts without performance issues.
 
 ## License
-
 - [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Badges
-
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
 
 [![React Router](https://img.shields.io/badge/React_Router-5.2.0-green)](https://reactrouter.com/)
+
+[![React Bootstrap](https://img.shields.io/npm/v/react-bootstrap.svg)](https://www.npmjs.com/package/react-bootstrap)
+
+[![React Loading Skeleton](https://img.shields.io/npm/v/react-loading-skeleton.svg)](https://www.npmjs.com/package/react-loading-skeleton)
+
+[![React Icons](https://img.shields.io/npm/v/react-icons.svg)](https://www.npmjs.com/package/react-icons)
