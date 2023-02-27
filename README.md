@@ -121,4 +121,3 @@ The application uses the Random User API to fetch contact data. This API generat
 ## Badges
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
 
-[![React Router](https://img.shields.io/badge/React_Router-5.2.0-green)](https://reactrouter.com/)
