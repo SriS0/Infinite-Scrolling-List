@@ -122,9 +122,3 @@ The application uses the Random User API to fetch contact data. This API generat
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
 
 [![React Router](https://img.shields.io/badge/React_Router-5.2.0-green)](https://reactrouter.com/)
-
-[![React Bootstrap](https://img.shields.io/npm/v/react-bootstrap.svg)](https://www.npmjs.com/package/react-bootstrap)
-
-[![React Loading Skeleton](https://img.shields.io/npm/v/react-loading-skeleton.svg)](https://www.npmjs.com/package/react-loading-skeleton)
-
-[![React Icons](https://img.shields.io/npm/v/react-icons.svg)](https://www.npmjs.com/package/react-icons)
